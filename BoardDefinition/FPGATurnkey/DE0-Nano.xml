@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FPGABoard Version="1.0">
+   <BoardName>DE0-Nano</BoardName>
+   <FPGA Device="EP4CE22F17C6" Family="Cyclone IV E" JTAGChainPosition="1" Package="" Speed="" Vendor="Altera">
+      <Interface>
+         <Type>Altera JTAG</Type>
+      </Interface>
+      <Interface>
+         <Type>Clock</Type>
+         <Parameter ID="ClockType">Single-Ended</Parameter>
+         <Parameter ID="Frequency">50</Parameter>
+         <Signal>
+            <SignalName>Clock</SignalName>
+            <Description>Clock</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>R8</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+      </Interface>
+      <Interface>
+         <Type>User-defined I/O interface</Type>
+         <Signal>
+            <SignalName>ADC_CS_N</SignalName>
+            <Description>ADC Chip Select</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>A10</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>ADC_SADDR</SignalName>
+            <Description>ADC Digital Data input</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>B10</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>ADC_SCLK</SignalName>
+            <Description>ADC Digital Clock input</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>B14</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>ADC_SDAT</SignalName>
+            <Description>ADC Digital Data output</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>A9</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_ADDR</SignalName>
+            <Description>SDRAM Address [0..12]</Description>
+            <Direction>out</Direction>
+            <BitWidth>13</BitWidth>
+            <FPGAPin>P2,N5,N6,M8,P8,T7,N8,T6,R1,P1,N2,N1,L4</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_BA</SignalName>
+            <Description>SDRAM Bank Address [0..1]</Description>
+            <Direction>out</Direction>
+            <BitWidth>2</BitWidth>
+            <FPGAPin>M7,M6</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_CAS_N</SignalName>
+            <Description>SDRAM Column Address Strobe</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>L1</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_CKE</SignalName>
+            <Description>SDRAM Clock Enable</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>L7</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_CLK</SignalName>
+            <Description>SDRAM Clock</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>R4</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_CS_N</SignalName>
+            <Description>SDRAM Chip Select</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>P6</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_DQ</SignalName>
+            <Description>SDRAM Data [0..15]</Description>
+            <Direction>inout</Direction>
+            <BitWidth>16</BitWidth>
+            <FPGAPin>G2,G1,L8,K5,K2,J2,J1,R7,T4,T2,T3,R3,R5,P3,N3,K1</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_DQM</SignalName>
+            <Description>SDRAM byte Data Mask [0..1]</Description>
+            <Direction>out</Direction>
+            <BitWidth>2</BitWidth>
+            <FPGAPin>R6,T5</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_RAS_N</SignalName>
+            <Description>SDRAM Row Address Strobe</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>L2</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>DRAM_WE_N</SignalName>
+            <Description>SDRAM Write Enable</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>C2</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>GPIO_0</SignalName>
+            <Description>General purpose I/O pins GPIO_0 [0..33]</Description>
+            <Direction>inout</Direction>
+            <BitWidth>34</BitWidth>
+            <FPGAPin>D3, C3, A2, A3, B3, B4, A4, B5, A5, D5, B6, A6, B7, D6, A7, C6, C8, E6, E7, D8, E8, F8, F9, E9, C9, D9, E11, E10, C11, B11, A12, D11, D12, B12</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>GPIO_0_IN</SignalName>
+            <Description>General purpose Input pins GPIO_0_IN [0..1]</Description>
+            <Direction>in</Direction>
+            <BitWidth>2</BitWidth>
+            <FPGAPin>A8,B8</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>GPIO_1</SignalName>
+            <Description>General purpose I/O pins GPIO_1 [0..33]</Description>
+            <Direction>inout</Direction>
+            <BitWidth>34</BitWidth>
+            <FPGAPin>F13,T15,T14,T13,R13,T12,R12,T11,T10,R11,P11,R10,N12,P9,N9,N11,L16,K16,R16,L15,P15,P16,R14,N16,N15,P14,L14,N14,M10,L13,J16,K15,J13,J14</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>GPIO_1_IN</SignalName>
+            <Description>General purpose Input pins GPIO_1_IN [0..1]</Description>
+            <Direction>in</Direction>
+            <BitWidth>2</BitWidth>
+            <FPGAPin>T9,R9</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>GPIO_2</SignalName>
+            <Description>General purpose I/O pins GPIO_2 [0..12]</Description>
+            <Direction>inout</Direction>
+            <BitWidth>13</BitWidth>
+            <FPGAPin>A14,B16,C14,C16,C15,D16,D15,D14,F15,F16,F14,G16,G15</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>GPIO_2_IN</SignalName>
+            <Description>General purpose Input pins GPIO_2_IN [0..2]</Description>
+            <Direction>in</Direction>
+            <BitWidth>3</BitWidth>
+            <FPGAPin>E15,E16,M16</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>G_SENSOR_CS_N</SignalName>
+            <Description>Accelerometer chip select</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>G5</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>G_SENSOR_INT</SignalName>
+            <Description>Accelerometer interrupt</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>M2</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>I2C_SCLK</SignalName>
+            <Description>Accelerometer and EEPROM I2C SCLK</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>F2</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>I2C_SDAT</SignalName>
+            <Description>Accelerometer and EEPROM I2C SDAT</Description>
+            <Direction>inout</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>F1</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>KEY</SignalName>
+            <Description>KEY[0..1]</Description>
+            <Direction>in</Direction>
+            <BitWidth>2</BitWidth>
+            <FPGAPin>J15, E1</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>LED</SignalName>
+            <Description>LED[0..7]</Description>
+            <Direction>out</Direction>
+            <BitWidth>8</BitWidth>
+            <FPGAPin>A15, A13, B13, A11, D1, F3, B1, L3</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+         <Signal>
+            <SignalName>SW</SignalName>
+            <Description>SW[0..3]</Description>
+            <Direction>in</Direction>
+            <BitWidth>4</BitWidth>
+            <FPGAPin>M1, T8, B9, M15</FPGAPin>
+            <IOStandard>3.3-V LVTTL</IOStandard>
+         </Signal>
+      </Interface>
+   </FPGA>
+</FPGABoard>
